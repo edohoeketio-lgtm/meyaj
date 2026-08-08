@@ -138,19 +138,25 @@ button:active {
   .hero-container {
     flex-direction: column !important;
     justify-content: center !important;
-    gap: 3rem !important;
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
+    gap: 1.5rem !important;
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
   }
   
   .hero-text-left {
+    flex: 0 1 auto !important;
     justify-content: center !important;
     padding-right: 0 !important;
   }
   
   .hero-text-right {
+    flex: 0 1 auto !important;
     justify-content: center !important;
     padding-left: 0 !important;
+  }
+  
+  .hero-container > div {
+    flex: 0 1 auto !important;
   }
   
   /* Ensure the footer isn't covering content on very small heights */
