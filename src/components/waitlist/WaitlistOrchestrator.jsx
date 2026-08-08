@@ -30,11 +30,12 @@ export default function WaitlistOrchestrator({ phase, onSubmitSuccess }) {
           animate={{ 
             clipPath: rectClip,
             borderRadius: 0,
-            width: 'min(90vw, 450px)',
+            width: 450,
             height: 300 
           }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
           style={{
+            maxWidth: '90vw',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -49,7 +50,7 @@ export default function WaitlistOrchestrator({ phase, onSubmitSuccess }) {
           key="unmorphing"
           layoutId="center-container"
           initial={{ 
-            width: 'min(90vw, 450px)', height: 250, 
+            width: 450, height: 250, 
             clipPath: rectClip,
             backgroundColor: 'rgba(255,255,255,0.1)',
             backdropFilter: 'blur(12px)',
@@ -64,6 +65,7 @@ export default function WaitlistOrchestrator({ phase, onSubmitSuccess }) {
           }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
           style={{
+            maxWidth: '90vw',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
