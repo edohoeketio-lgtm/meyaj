@@ -70,20 +70,18 @@ export default function LandingPage() {
 
       <motion.div 
         layout
+        className="hero-container"
         style={{ 
           position: 'relative', 
           zIndex: 2, 
           minHeight: '100vh', 
-          display: 'flex', 
-          alignItems: 'center', 
-          justifyContent: 'space-between',
           padding: '0 5vw',
           width: '100%',
           maxWidth: '1400px',
           margin: '0 auto'
         }}
       >
-        <motion.div layout style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', paddingRight: '4vw' }}>
+        <motion.div layout className="hero-text-left" style={{ flex: 1 }}>
           <motion.h1 layout style={{ 
             fontFamily: '"FK Grotesk", sans-serif',
             fontSize: 'clamp(3rem, 6vw, 8rem)', 
@@ -106,7 +104,7 @@ export default function LandingPage() {
           <WaitlistOrchestrator phase={phase} onSubmitSuccess={handleSubmitSuccess} />
         </motion.div>
 
-        <motion.div layout style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center', textAlign: 'left', paddingLeft: '4vw', whiteSpace: 'nowrap' }}>
+        <motion.div layout className="hero-text-right" style={{ flex: 1, alignItems: 'center', textAlign: 'left', whiteSpace: 'nowrap' }}>
           <motion.p layout style={{ 
             fontSize: 'clamp(1.2rem, 2vw, 2.5rem)', 
             fontWeight: 300, 

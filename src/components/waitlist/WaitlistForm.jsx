@@ -41,11 +41,11 @@ export default function WaitlistForm({ onSubmitSuccess }) {
     <motion.div 
       key="form"
       layoutId="center-container"
-      initial={{ borderRadius: 0, backgroundColor: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', width: 450, height: 300, opacity: 1, clipPath: rectClip }}
-      animate={{ width: 450, height: 'auto', opacity: 1 }}
+      initial={{ borderRadius: 0, backgroundColor: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', width: 'min(90vw, 450px)', height: 300, opacity: 1, clipPath: rectClip }}
+      animate={{ width: 'min(90vw, 450px)', height: 'auto', opacity: 1 }}
       transition={{ type: "spring", bounce: 0.15, duration: 0.8 }}
       style={{
-        padding: '2.5rem',
+        padding: 'min(5vw, 2.5rem)',
         display: 'flex',
         flexDirection: 'column',
         color: 'white',
