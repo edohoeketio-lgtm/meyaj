@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -17,7 +18,7 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
-
+=======
 node_modules/
 .expo/
 dist/
@@ -30,11 +31,13 @@ npm-debug.*
 *.orig.*
 veda
 .idea/
-
+>>>>>>> a53332e434a5939fa8dde29bb8063f43852cc550
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
+<<<<<<< HEAD
+=======
 .env
+>>>>>>> a53332e434a5939fa8dde29bb8063f43852cc550

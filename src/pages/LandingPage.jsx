@@ -51,20 +51,11 @@ export default function LandingPage() {
         style={{ 
           position: 'absolute', 
           top: 0, left: 0, right: 0, bottom: 0, 
-          backgroundImage: 'url(/fynie.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundColor: '#00FF00',
           zIndex: 0
         }}
       />
-      <div 
-        style={{
-          position: 'absolute',
-          top: 0, left: 0, right: 0, bottom: 0,
-          backgroundColor: 'rgba(0,0,0,0.15)',
-          zIndex: 1
-        }}
-      />
+
 
       <Header phase={phase} onJoinClick={handleJoinClick} />
 
